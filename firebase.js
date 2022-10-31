@@ -17,13 +17,7 @@ import {
 // Your web app's Firebase configuration
 const firebaseConfig = {
   // Put you credentials here
-  apiKey: "AIzaSyAVfLCVmG6EBOr2z1AkYK2aI0jA8mO7n9w",
-    authDomain: "aula-2022.firebaseapp.com",
-    projectId: "aula-2022",
-    storageBucket: "aula-2022.appspot.com",
-    messagingSenderId: "369263924085",
-    appId: "1:369263924085:web:3bc65c13ae0fc1ef71793c",
-    measurementId: "G-SH6FM5PC89"
+ 
 };
 
 // Initialize Firebase
