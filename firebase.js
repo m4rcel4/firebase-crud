@@ -16,6 +16,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
+  apiKey: "AIzaSyBb8iZnmzaQJO1FKDkd2s-5G_uZq7l8odU",
+    authDomain: "fir-crud-aula.firebaseapp.com",
+    projectId: "fir-crud-aula",
+    storageBucket: "fir-crud-aula.appspot.com",
+    messagingSenderId: "319725483199",
+    appId: "1:319725483199:web:73fdb61b3ff8fdc488020a"
   // Put you credentials here
  
 };
@@ -28,13 +34,19 @@ export const db = getFirestore();
 /**
  * Save a New Task in Firestore
  * @param {string} title the title of the Task
- * @param {string} description the description of the Task
+ * @param {string} description 
+ * 
  */
+
 export const saveTask = (title, description) =>
   addDoc(collection(db, "tasks"), { title, description });
+ 
+
 
 export const onGetTasks = (callback) =>
   onSnapshot(collection(db, "tasks"), callback);
+
+ 
 
 /**
  *
